@@ -51,9 +51,9 @@ python app.py
 ## How It Works
 
 ### Step 1: Register Students
-![Register New Student](https://raw.githubusercontent.com/rakshithgowda01/face-recognition-attendance/main/assets/step1_register.png)
+![Register New Student](https://github.com/rakshithgowda01/face-recognition-attendance/blob/main/step1_register.png?raw=true)
 
-The registration page allows you to add new students to the system. Upload 1 to 10 photographs of each student for better accuracy. The system uses these images to generate facial embeddings (numerical representations of facial features) which are stored and used for future recognition. The more diverse the photos (different angles, lighting conditions), the better the recognition accuracy during live attendance marking.
+The registration page allows you to add new students to the system. Upload 1 to 10 photographs of each student for better accuracy. The system uses these images to generate facial embeddings (numerical representations of faces).
 
 **Photo Tips:**
 - ✅ Clear front-facing face
@@ -68,7 +68,7 @@ The registration page allows you to add new students to the system. Upload 1 to 
 ---
 
 ### Step 2: View Dashboard
-![Dashboard Overview](https://raw.githubusercontent.com/rakshithgowda01/face-recognition-attendance/main/assets/step2_dashboard.png)
+![Dashboard Overview](https://github.com/rakshithgowda01/face-recognition-attendance/blob/main/step2_dashboard.png?raw=true)
 
 The dashboard provides a comprehensive overview of daily attendance statistics. It displays:
 - **Registered**: Total number of registered students (5 in this example)
@@ -76,12 +76,12 @@ The dashboard provides a comprehensive overview of daily attendance statistics. 
 - **Absent**: Students not yet marked (3 absent)
 - **Attendance Rate**: Overall percentage of students present (40.0%)
 
-The attendance progress bar shows real-time visual feedback on the number of students who have been marked present. You can also manually mark students present or absent from here, and view the attendance records in detail.
+The attendance progress bar shows real-time visual feedback on the number of students who have been marked present. You can also manually mark students present or absent from here, and view the attendance details.
 
 ---
 
 ### Step 3: Live Attendance Marking
-![Live Attendance](https://raw.githubusercontent.com/rakshithgowda01/face-recognition-attendance/main/assets/step3_live_attendance.png)
+![Live Attendance](https://github.com/rakshithgowda01/face-recognition-attendance/blob/main/step3_live_attendance.png?raw=true)
 
 The Live Attendance page uses your webcam to automatically recognize and mark students present. Simply start the webcam, and the ArcFace AI model will:
 1. Detect faces in the webcam feed
@@ -89,12 +89,12 @@ The Live Attendance page uses your webcam to automatically recognize and mark st
 3. Automatically mark matching students as present
 4. Prevent duplicate marking (same student multiple times)
 
-A live log on the right side displays all students who were successfully recognized, along with their timestamp and confidence score. The system is smart about preventing spam—once a student is marked, they can only be marked again after a set interval.
+A live log on the right side displays all students who were successfully recognized, along with their timestamp and confidence score. The system is smart about preventing spam—once a student is marked, they won't be marked again until reset.
 
 ---
 
 ### Step 4: Manage Student Records
-![All Students Management](https://raw.githubusercontent.com/rakshithgowda01/face-recognition-attendance/main/assets/step4_all_students.png)
+![All Students Management](https://github.com/rakshithgowda01/face-recognition-attendance/blob/main/step4_all_students.png?raw=true)
 
 The All Students page provides a complete list of all registered students with their details:
 - **Name**: Student's full name
@@ -144,7 +144,7 @@ face-recognition-attendance/
 - **Poor recognition?** Register with more photos from different angles and lighting conditions
 - **Model download failed?** Check internet connection and retry `python setup.py`
 - **Slow performance?** Close other applications to free up system resources
-- **Images not showing?** Make sure images are uploaded to the `assets/` folder with correct filenames
+- **Images not showing?** Make sure images are in the repository root with correct filenames
 
 ---
 
