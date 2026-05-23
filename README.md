@@ -51,24 +51,24 @@ python app.py
 ## How It Works
 
 ### Step 1: Register Students
-![Register New Student](image1.png)
+![Register New Student](https://raw.githubusercontent.com/rakshithgowda01/face-recognition-attendance/main/assets/step1_register.png)
 
 The registration page allows you to add new students to the system. Upload 1 to 10 photographs of each student for better accuracy. The system uses these images to generate facial embeddings (numerical representations of facial features) which are stored and used for future recognition. The more diverse the photos (different angles, lighting conditions), the better the recognition accuracy during live attendance marking.
 
 **Photo Tips:**
-- Clear front-facing face
-- Good lighting
-- Minimum 200×200 pixels
-- JPG or PNG format
-- Multiple angles help (increases recognition accuracy)
-- Avoid sunglasses or masks
-- No extreme side profiles (>45°)
-- Avoid blurry or dark photos
+- ✅ Clear front-facing face
+- ✅ Good lighting
+- ✅ Minimum 200×200 pixels
+- ✅ JPG or PNG format
+- ✅ Multiple angles help (increases recognition accuracy)
+- ❌ Avoid sunglasses or masks
+- ❌ No extreme side profiles (>45°)
+- ❌ Avoid blurry or dark photos
 
 ---
 
 ### Step 2: View Dashboard
-![Dashboard Overview](image2.png)
+![Dashboard Overview](https://raw.githubusercontent.com/rakshithgowda01/face-recognition-attendance/main/assets/step2_dashboard.png)
 
 The dashboard provides a comprehensive overview of daily attendance statistics. It displays:
 - **Registered**: Total number of registered students (5 in this example)
@@ -81,7 +81,7 @@ The attendance progress bar shows real-time visual feedback on the number of stu
 ---
 
 ### Step 3: Live Attendance Marking
-![Live Attendance](image3.png)
+![Live Attendance](https://raw.githubusercontent.com/rakshithgowda01/face-recognition-attendance/main/assets/step3_live_attendance.png)
 
 The Live Attendance page uses your webcam to automatically recognize and mark students present. Simply start the webcam, and the ArcFace AI model will:
 1. Detect faces in the webcam feed
@@ -94,7 +94,7 @@ A live log on the right side displays all students who were successfully recogni
 ---
 
 ### Step 4: Manage Student Records
-![All Students Management](image4.png)
+![All Students Management](https://raw.githubusercontent.com/rakshithgowda01/face-recognition-attendance/main/assets/step4_all_students.png)
 
 The All Students page provides a complete list of all registered students with their details:
 - **Name**: Student's full name
@@ -103,10 +103,10 @@ The All Students page provides a complete list of all registered students with t
 - **Student ID**: Unique identifier in the system
 
 From this view, you can:
-- Search students by name or class
-- Refresh the student list
-- Delete students from the system (if they withdraw or graduate)
-- View and manage each student's facial data
+- 🔍 Search students by name or class
+- 🔄 Refresh the student list
+- 🗑️ Delete students from the system (if they withdraw or graduate)
+- 📋 View and manage each student's facial data
 
 ---
 
@@ -130,7 +130,10 @@ face-recognition-attendance/
 ├── config.py             # Configuration settings
 ├── models/               # AI model storage
 ├── data/                 # Student embeddings and database
-└── ui/                   # GUI components
+├── database/             # Attendance records database
+├── attendance_logs/      # Daily attendance logs
+├── assets/               # Screenshots and documentation images
+└── README.md             # Documentation
 ```
 
 ---
@@ -138,9 +141,10 @@ face-recognition-attendance/
 ## Troubleshooting
 
 - **Camera not detected?** Ensure webcam is connected and permitted in Windows settings
-- **Poor recognition?** Register with more photos from different angles
-- **Model download failed?** Check internet connection and retry setup.py
+- **Poor recognition?** Register with more photos from different angles and lighting conditions
+- **Model download failed?** Check internet connection and retry `python setup.py`
 - **Slow performance?** Close other applications to free up system resources
+- **Images not showing?** Make sure images are uploaded to the `assets/` folder with correct filenames
 
 ---
 
