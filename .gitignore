@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.env
+dist/
+build/
+*.spec
+
+# Model files (too large for GitHub, downloaded via setup.py)
+models/models/
+models/buffalo_l/
+*.onnx
+
+# Student biometric data (NEVER commit — privacy)
+database/embeddings.pkl
+database/identity_profiles.pkl
+database/label_map.json
+data/raw_images/*/
+data/augmented_images/*/
+data/student_metadata.csv
+
+# Attendance (personal data)
+attendance_logs/*.csv
+attendance_logs/*.xlsx
+
+# Outputs
+outputs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
